@@ -125,6 +125,7 @@ def get_raspberry_model(raspberry_pi_revision):
     """
     Quick DRY workaround. Needs to be refactored later.
     """
+    print(raspberry_pi_revision)
     return raspberry_pi_helper.lookup_raspberry_pi_revision(raspberry_pi_revision)['model']
 
 
